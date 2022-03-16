@@ -27,8 +27,8 @@ steps:
     command: 'publish'
     publishRegistry: 'useFeed'
     publishFeed: '1d933d37-b59f-4b69-a196-4c0110f3c236'
-    - task: PublishBuildArtifacts@1
-      inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: 'drop'
-        publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
