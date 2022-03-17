@@ -19,9 +19,6 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: Bash@3
-  inputs:
-    filePath: 'if [ -f extensions.csproj ] then     dotnet build extensions.csproj --output ./bin fi'
 - task: NodeTool@0
   inputs:
     versionSpec: '10.14.1'
